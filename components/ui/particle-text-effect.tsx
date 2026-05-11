@@ -107,7 +107,7 @@ const DEFAULT_WORDS = ["HELLO", "MY NAME IS", "MUHAMMAD HAROON", "FOUNDER OF", "
 
 export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffectProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const animationRef = useRef<number>()
+  const animationRef = useRef<number>(null)
   const particlesRef = useRef<Particle[]>([])
   const frameCountRef = useRef(0)
   const wordIndexRef = useRef(0)
